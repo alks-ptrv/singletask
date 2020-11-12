@@ -1,5 +1,5 @@
 <template>
-  <!-- Загрузка -->
+  <!-- Загрузка картинки-->
   <v-card :loading="loading" class="mx-auto my-12" max-width="450">
     <template slot="progress">
       <v-progress-linear
@@ -133,7 +133,7 @@ export default {
       this.loading = true;
       setTimeout(() => (this.loading = false), 1000);
       this.picture = `https://picsum.photos/1920/1080?random?v=${Math.floor(
-        Math.random() * 10
+        Math.random() * 100
       )}`;
     },
     addTask() {
